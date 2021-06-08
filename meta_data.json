@@ -1,0 +1,10 @@
+{
+    "categories": {
+        "0": "technical"
+    },
+    "description": "This is a plugin managing requests and transactions from Tatum API depending on the environment(testnet/mainnet). There is also an intergration of Tatum KMS to manage signing ",
+    "image": "//s3.amazonaws.com/appforest_uf/f1531455189113x959372189361602000/Bubble%20Icon.png",
+    "link": "https://tatum.io/apidoc",
+    "name": "Tatum API connector",
+    "plugin_instructions": "A Tatum API key is required to use this plugin."
+}
