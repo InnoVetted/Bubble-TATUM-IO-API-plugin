@@ -1,0 +1,46 @@
+{
+    "category": "data (things)",
+    "display": "List all customers",
+    "fields": {
+        "ADn": {
+            "caption": "pageSize",
+            "editor": "StaticNumber",
+            "name": "pagesize",
+            "rank": 0
+        },
+        "ADo": {
+            "caption": "offset",
+            "editor": "StaticNumber",
+            "name": "offset",
+            "optional": true,
+            "rank": 1
+        }
+    },
+    "return_value": {
+        "ADp": {
+            "caption": "externalId",
+            "name": "externalid",
+            "rank": 0,
+            "value": "text"
+        },
+        "ADq": {
+            "caption": "id",
+            "name": "id",
+            "rank": 1,
+            "value": "text"
+        },
+        "ADr": {
+            "caption": "enabled",
+            "name": "enabled",
+            "rank": 2,
+            "value": "boolean"
+        },
+        "ADs": {
+            "caption": "active",
+            "name": "active",
+            "rank": 3,
+            "value": "boolean"
+        }
+    },
+    "type": "server_side"
+}

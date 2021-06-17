@@ -1,0 +1,33 @@
+{
+    "category": "data (things)",
+    "display": "Get Celo ERC721 Token ID",
+    "fields": {
+        "ADY": {
+            "caption": "address",
+            "editor": "StaticText",
+            "name": "address",
+            "rank": 0
+        },
+        "ADZ": {
+            "caption": "index",
+            "editor": "StaticNumber",
+            "name": "index",
+            "rank": 1
+        },
+        "ADa": {
+            "caption": "contractAddress",
+            "editor": "StaticText",
+            "name": "contractaddress",
+            "rank": 2
+        }
+    },
+    "return_value": {
+        "ADb": {
+            "caption": "data",
+            "name": "data",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

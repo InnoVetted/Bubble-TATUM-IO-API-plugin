@@ -1,0 +1,35 @@
+{
+    "category": "data (things)",
+    "display": "Get Quorum account",
+    "fields": {
+        "ACU": {
+            "caption": "password",
+            "editor": "StaticText",
+            "name": "password",
+            "rank": 0,
+            "value": "text"
+        },
+        "AEO": {
+            "caption": "x-quorum-endpoint",
+            "editor": "StaticText",
+            "name": "x-quorum-endpoint",
+            "rank": 1
+        }
+    },
+    "return_value": {
+        "ACL": {
+            "caption": "address",
+            "name": "address",
+            "rank": 0,
+            "value": "text"
+        },
+        "ACT": {
+            "caption": "error",
+            "name": "error",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": false
+}

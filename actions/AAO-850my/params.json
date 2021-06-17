@@ -1,0 +1,27 @@
+{
+    "category": "data (things)",
+    "display": "Generate Ethereum private key",
+    "fields": {
+        "ADD": {
+            "caption": "index",
+            "editor": "StaticText",
+            "name": "index",
+            "rank": 0
+        },
+        "ADE": {
+            "caption": "mnemonic",
+            "editor": "StaticText",
+            "name": "mnemonic",
+            "rank": 1
+        }
+    },
+    "return_value": {
+        "ADF": {
+            "caption": "key",
+            "name": "key",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

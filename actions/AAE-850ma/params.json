@@ -1,0 +1,36 @@
+{
+    "category": "plugins",
+    "display": "Get account balance",
+    "fields": {
+        "ACM": {
+            "caption": "account",
+            "doc": "",
+            "editor": "DynamicValue",
+            "name": "account",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "ACN": {
+            "caption": "assets",
+            "is_list": true,
+            "name": "assets",
+            "rank": 0,
+            "value": "text"
+        },
+        "ACO": {
+            "caption": "balance",
+            "name": "balance",
+            "rank": 1,
+            "value": "text"
+        },
+        "AEP": {
+            "caption": "error",
+            "name": "error",
+            "rank": 2,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

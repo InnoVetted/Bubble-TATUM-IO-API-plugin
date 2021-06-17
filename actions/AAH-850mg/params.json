@@ -1,0 +1,28 @@
+{
+    "category": "data (things)",
+    "display": "Get Ethereum ERC721 account balance",
+    "fields": {
+        "ACk": {
+            "caption": "address",
+            "default_val": "",
+            "editor": "StaticText",
+            "name": "address",
+            "rank": 0
+        },
+        "ACl": {
+            "caption": "contractAddress",
+            "editor": "StaticText",
+            "name": "contractaddress",
+            "rank": 1
+        }
+    },
+    "return_value": {
+        "ACm": {
+            "caption": "data",
+            "name": "data",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

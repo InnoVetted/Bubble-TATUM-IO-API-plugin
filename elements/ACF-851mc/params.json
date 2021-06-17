@@ -1,0 +1,41 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "Get quorum account",
+    "events": {
+        "ACI": {
+            "caption": "quorum_submit_button_clicked",
+            "name": "quorum_submit_button_clicked"
+        }
+    },
+    "fields": {
+        "ACG": {
+            "caption": "Enter account details",
+            "editor": "DynamicValue",
+            "name": "enter_account_details",
+            "rank": 0,
+            "value": "_any_thing"
+        }
+    },
+    "icon": "ion-waterdrop",
+    "property_applications": {
+        "Border": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "ACH": {
+            "caption": "is_account_button_clicked",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "is_verified",
+            "value": "text"
+        }
+    }
+}

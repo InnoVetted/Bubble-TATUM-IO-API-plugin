@@ -1,0 +1,68 @@
+{
+    "category": "data (things)",
+    "display": "Mint Ethereum ERC721 Multiple Tokens",
+    "fields": {
+        "ACn": {
+            "caption": "to",
+            "editor": "StaticText",
+            "name": "to",
+            "rank": 0
+        },
+        "ACo": {
+            "caption": "tokenId",
+            "editor": "StaticText",
+            "name": "tokenid",
+            "rank": 1
+        },
+        "ACp": {
+            "caption": "url",
+            "editor": "StaticText",
+            "name": "url",
+            "rank": 2
+        },
+        "ACq": {
+            "caption": "contractAddress",
+            "editor": "StaticText",
+            "name": "contractaddress",
+            "rank": 3
+        },
+        "ACr": {
+            "caption": "signatureId",
+            "editor": "StaticText",
+            "name": "signatureid",
+            "rank": 4
+        },
+        "ACs": {
+            "caption": "index",
+            "editor": "StaticNumber",
+            "name": "index",
+            "optional": true,
+            "rank": 5
+        },
+        "ACt": {
+            "caption": "nonce",
+            "editor": "StaticNumber",
+            "name": "nonce",
+            "optional": true,
+            "rank": 6
+        },
+        "ACu": {
+            "caption": "fee",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "fee",
+            "optional": true,
+            "rank": 7,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "ACv": {
+            "caption": "signatureId",
+            "name": "signatureid",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

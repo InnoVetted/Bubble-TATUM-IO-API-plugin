@@ -1,0 +1,60 @@
+{
+    "category": "data (things)",
+    "display": "Get Celo Account balance",
+    "fields": {
+        "ADc": {
+            "caption": "to",
+            "default_val": "",
+            "editor": "StaticText",
+            "name": "to",
+            "rank": 0
+        },
+        "ADd": {
+            "caption": "tokenId",
+            "editor": "StaticText",
+            "name": "tokenid",
+            "rank": 1
+        },
+        "ADe": {
+            "caption": "contractAddress",
+            "editor": "StaticText",
+            "name": "contractaddress",
+            "rank": 2
+        },
+        "ADf": {
+            "caption": "index",
+            "editor": "StaticNumber",
+            "name": "index",
+            "optional": true,
+            "rank": 3
+        },
+        "ADg": {
+            "caption": "signatureId",
+            "editor": "StaticText",
+            "name": "signatureid",
+            "rank": 4
+        },
+        "ADh": {
+            "caption": "nonce",
+            "editor": "StaticNumber",
+            "name": "nonce",
+            "optional": true,
+            "rank": 5
+        },
+        "ADi": {
+            "caption": "feeCurrency",
+            "editor": "StaticText",
+            "name": "feecurrency",
+            "rank": 6
+        }
+    },
+    "return_value": {
+        "ADj": {
+            "caption": "signatureId",
+            "name": "signatureid",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

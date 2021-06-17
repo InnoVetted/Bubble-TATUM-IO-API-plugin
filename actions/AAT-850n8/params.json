@@ -1,0 +1,27 @@
+{
+    "category": "data (things)",
+    "display": "Get Celo ERC721 Account balance",
+    "fields": {
+        "ADS": {
+            "caption": "address",
+            "editor": "StaticText",
+            "name": "address",
+            "rank": 0
+        },
+        "ADT": {
+            "caption": "contractAddress",
+            "editor": "StaticText",
+            "name": "contractaddress",
+            "rank": 1
+        }
+    },
+    "return_value": {
+        "ADU": {
+            "caption": "data",
+            "name": "data",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

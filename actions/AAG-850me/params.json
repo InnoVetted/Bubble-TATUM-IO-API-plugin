@@ -1,0 +1,27 @@
+{
+    "category": "data (things)",
+    "display": "Update Virtual Currency",
+    "fields": {
+        "ACh": {
+            "caption": "name",
+            "default_val": "",
+            "editor": "StaticText",
+            "name": "name",
+            "rank": 0
+        },
+        "ACi": {
+            "caption": "baseRate",
+            "editor": "StaticNumber",
+            "name": "baserate",
+            "optional": true,
+            "rank": 1
+        },
+        "ACj": {
+            "caption": "basePair",
+            "editor": "StaticText",
+            "name": "basepair",
+            "rank": 2
+        }
+    },
+    "type": "server_side"
+}

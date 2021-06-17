@@ -1,0 +1,46 @@
+{
+    "category": "data (things)",
+    "display": "Burn Celo ERC20",
+    "fields": {
+        "ADJ": {
+            "caption": "amount",
+            "editor": "StaticText",
+            "name": "amount",
+            "rank": 0
+        },
+        "ADK": {
+            "caption": "contractAddress",
+            "editor": "StaticText",
+            "name": "contractaddress",
+            "rank": 1
+        },
+        "ADL": {
+            "caption": "fromPrivateKey",
+            "editor": "StaticText",
+            "name": "fromprivatekey",
+            "rank": 2
+        },
+        "ADM": {
+            "caption": "nonce",
+            "editor": "StaticNumber",
+            "name": "nonce",
+            "optional": true,
+            "rank": 3
+        },
+        "ADN": {
+            "caption": "feeCurrency",
+            "editor": "StaticText",
+            "name": "feecurrency",
+            "rank": 4
+        }
+    },
+    "return_value": {
+        "ADO": {
+            "caption": "signatureId",
+            "name": "signatureid",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

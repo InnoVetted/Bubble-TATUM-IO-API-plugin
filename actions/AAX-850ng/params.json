@@ -1,0 +1,27 @@
+{
+    "category": "data (things)",
+    "display": "Get Celo ERC721 Token Metadata ",
+    "fields": {
+        "ADk": {
+            "caption": "contractAddress",
+            "editor": "StaticText",
+            "name": "contractaddress",
+            "rank": 1
+        },
+        "ADl": {
+            "caption": "token",
+            "editor": "StaticText",
+            "name": "token",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "ADm": {
+            "caption": "data",
+            "name": "data",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

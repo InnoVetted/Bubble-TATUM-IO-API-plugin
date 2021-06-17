@@ -1,0 +1,44 @@
+{
+    "category": "data (things)",
+    "display": "Estimate etherum transaction fees",
+    "fields": {
+        "ACx": {
+            "caption": "from",
+            "editor": "StaticText",
+            "name": "from",
+            "rank": 0
+        },
+        "ACy": {
+            "caption": "to",
+            "editor": "StaticText",
+            "name": "to",
+            "rank": 1
+        },
+        "ACz": {
+            "caption": "amount",
+            "editor": "StaticText",
+            "name": "amount",
+            "rank": 2
+        },
+        "ADA": {
+            "caption": "data",
+            "editor": "StaticText",
+            "name": "data",
+            "optional": true,
+            "rank": 3
+        }
+    },
+    "return_value": {
+        "ADB": {
+            "caption": "gasLimit",
+            "name": "gaslimit",
+            "rank": 0
+        },
+        "ADC": {
+            "caption": "gasPrice",
+            "name": "gasprice",
+            "rank": 1
+        }
+    },
+    "type": "server_side"
+}

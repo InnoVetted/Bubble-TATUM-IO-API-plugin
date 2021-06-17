@@ -1,0 +1,28 @@
+{
+    "category": "data (things)",
+    "display": "Get Celo ERC721 Tokens By Address",
+    "fields": {
+        "ADV": {
+            "caption": "contractAddress",
+            "editor": "StaticText",
+            "name": "contractaddress",
+            "rank": 1
+        },
+        "ADW": {
+            "caption": "address",
+            "editor": "StaticText",
+            "name": "address",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "ADX": {
+            "caption": "data",
+            "is_list": true,
+            "name": "data",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

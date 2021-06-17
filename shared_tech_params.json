@@ -1,6 +1,16 @@
 {
     "dependencies": {
-        "plugin_api_version": 2,
+        "plugin_api_version": "2",
         "use_jquery": true
+    },
+    "shared_keys": {
+        "ACQ": {
+            "caption": "Testnet API key",
+            "type": "client_safe"
+        },
+        "ACR": {
+            "caption": "Mainnet API key",
+            "type": "secure"
+        }
     }
 }

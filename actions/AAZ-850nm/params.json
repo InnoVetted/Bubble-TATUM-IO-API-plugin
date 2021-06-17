@@ -1,0 +1,58 @@
+{
+    "category": "data (things)",
+    "display": "Get customer details",
+    "fields": {
+        "ADt": {
+            "caption": "id",
+            "editor": "DynamicValue",
+            "name": "id",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "ADu": {
+            "caption": "externalId",
+            "name": "externalid",
+            "rank": 0,
+            "value": "text"
+        },
+        "ADv": {
+            "caption": "id",
+            "name": "id",
+            "rank": 1,
+            "value": "text"
+        },
+        "ADw": {
+            "caption": "active",
+            "name": "active",
+            "rank": 2,
+            "value": "boolean"
+        },
+        "ADx": {
+            "caption": "enabled",
+            "name": "enabled",
+            "rank": 3,
+            "value": "boolean"
+        },
+        "ADy": {
+            "caption": "accountingCurrency",
+            "is_list": false,
+            "name": "accountingcurrency",
+            "rank": 4,
+            "value": "text"
+        },
+        "ADz": {
+            "caption": "customerCountry",
+            "name": "customercountry",
+            "rank": 5,
+            "value": "text"
+        },
+        "AEA": {
+            "caption": "providerCountry",
+            "name": "providercountry",
+            "rank": 6
+        }
+    },
+    "type": "server_side"
+}

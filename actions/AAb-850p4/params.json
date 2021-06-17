@@ -1,0 +1,21 @@
+{
+    "category": "data (things)",
+    "display": "Get Ethereum account balance",
+    "fields": {
+        "AEI": {
+            "caption": "address",
+            "editor": "StaticText",
+            "name": "address",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AEJ": {
+            "caption": "balance",
+            "name": "balance",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

@@ -1,0 +1,52 @@
+{
+    "category": "data (things)",
+    "display": "Get current exchange rate",
+    "fields": {
+        "AEB": {
+            "caption": "currency",
+            "editor": "StaticText",
+            "name": "currency",
+            "rank": 0
+        },
+        "AEC": {
+            "caption": "basePair",
+            "editor": "StaticText",
+            "name": "basepair",
+            "optional": true,
+            "rank": 1
+        }
+    },
+    "return_value": {
+        "AED": {
+            "caption": "id",
+            "name": "id",
+            "rank": 0,
+            "value": "text"
+        },
+        "AEE": {
+            "caption": "value",
+            "name": "value",
+            "rank": 1,
+            "value": "text"
+        },
+        "AEF": {
+            "caption": "basePair",
+            "name": "basepair",
+            "rank": 2,
+            "value": "text"
+        },
+        "AEG": {
+            "caption": "timestamp",
+            "name": "timestamp",
+            "rank": 3,
+            "value": "date"
+        },
+        "AEH": {
+            "caption": "source",
+            "name": "source",
+            "rank": 4,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

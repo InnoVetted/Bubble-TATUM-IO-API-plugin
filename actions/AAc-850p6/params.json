@@ -1,0 +1,33 @@
+{
+    "category": "data (things)",
+    "display": "Get NFT Token Metadata",
+    "fields": {
+        "AEK": {
+            "caption": "chain",
+            "editor": "StaticText",
+            "name": "chain",
+            "rank": 0
+        },
+        "AEL": {
+            "caption": "token",
+            "editor": "StaticText",
+            "name": "token",
+            "rank": 1
+        },
+        "AEM": {
+            "caption": "contractAddress",
+            "editor": "StaticText",
+            "name": "contractaddress",
+            "rank": 2
+        }
+    },
+    "return_value": {
+        "AEN": {
+            "caption": "data",
+            "name": "data",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

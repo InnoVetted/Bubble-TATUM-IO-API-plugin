@@ -1,0 +1,509 @@
+{
+    "auth": "private_key_header",
+    "calls": {
+        "AAe": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get virtual currency",
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.AAe",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAe\":{\"caption\":\"Get virtual currency\",\"fields\":{\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"VC_VIRTUAL\",\"path\":[\"name\"]},\"_p_supply\":{\"ret_value\":\"text\",\"caption\":\"supply\",\"sample_value\":\"1000000\",\"path\":[\"supply\"]},\"_p_accountId\":{\"ret_value\":\"text\",\"caption\":\"accountId\",\"sample_value\":\"5e68c66581f2ee32bc354087\",\"path\":[\"accountId\"]},\"_p_baseRate\":{\"ret_value\":\"number\",\"caption\":\"baseRate\",\"sample_value\":1,\"path\":[\"baseRate\"]},\"_p_basePair\":{\"ret_value\":\"text\",\"caption\":\"basePair\",\"sample_value\":\"BTC\",\"path\":[\"basePair\"]},\"_p_customerId\":{\"ret_value\":\"text\",\"caption\":\"customerId\",\"sample_value\":\"5e68c66581f2ee32bc354087\",\"path\":[\"customerId\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":\"My Virtual Token description.\",\"path\":[\"description\"]},\"_p_erc20Address\":{\"ret_value\":\"text\",\"caption\":\"erc20Address\",\"sample_value\":\"0x687422eEA2cB73B5d3e242bA5456b782919AFc85\",\"path\":[\"erc20Address\"]},\"_p_issuerAccount\":{\"ret_value\":\"text\",\"caption\":\"issuerAccount\",\"sample_value\":\"GDKYMXOAJ5MK4EVIHHNWRGAAOUZMNZYAETMHFCD6JCVBPZ77TUAZFPKT\",\"path\":[\"issuerAccount\"]},\"_p_chain\":{\"ret_value\":\"text\",\"caption\":\"chain\",\"sample_value\":\"ETH\",\"path\":[\"chain\"]},\"_p_initialAddress\":{\"ret_value\":\"text\",\"caption\":\"initialAddress\",\"sample_value\":\"0x687422eEA2cB73B5d3e242bA5456b782919AFc85\",\"path\":[\"initialAddress\"]}}}}",
+            "url": "https://api-eu1.tatum.io/v3/ledger/virtualCurrency/[name]",
+            "url_params": {
+                "AAm": {
+                    "key": "name",
+                    "private": true,
+                    "value": "VC_VIRTUAL"
+                }
+            }
+        },
+        "AAn": {
+            "body": "{\n\"password\": \"ksjdfhu98q34fi\"\n}",
+            "headers": {
+                "ACE": {
+                    "doc": "string\nExample: https://tatum.blockchain.azure.com:3200/21O-VGUJSqOz9xw7JSFhNyvk\nURL of the Quorum network",
+                    "key": "x-quorum-endpoint",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Generate Quorum account",
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.AAn",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAn\":{\"caption\":\"Generate Quorum account\",\"fields\":{\"_p_address\":{\"ret_value\":\"text\",\"caption\":\"address\",\"sample_value\":\"0x73fda64d9feaaada90cd0de8df6b520ae0fe65da\",\"path\":[\"address\"]}}}}",
+            "url": "https://api-eu1.tatum.io/v3/quorum/account"
+        },
+        "AAp": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get Account Balance",
+            "publish_as": "data",
+            "rank": 2,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.AAp",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAp\":{\"caption\":\"Get Account Balance\",\"fields\":{\"_p_assets\":{\"ret_value\":\"list.api.1623161739469x817972187112669200.plugin_api.AAp.assets\",\"caption\":\"assets\",\"path\":[\"assets\"]},\"_p_balance\":{\"ret_value\":\"text\",\"caption\":\"balance\",\"sample_value\":\"1000000000\",\"path\":[\"balance\"]}}},\"plugin_api.AAp.assets\":{\"caption\":\"Get Account Balance asset\",\"fields\":{\"_p_balance\":{\"ret_value\":\"text\",\"caption\":\"balance\",\"sample_value\":\"1000000000\",\"path\":[\"balance\"]},\"_p_currency\":{\"ret_value\":\"text\",\"caption\":\"currency\",\"sample_value\":\"015841551A748AD2C1F76FF6ECB0CCCD00000000\",\"path\":[\"currency\"]}}}}",
+            "url": "https://api-eu1.tatum.io/v3/xrp/account/[account]/balance",
+            "url_params": {
+                "AAq": {
+                    "key": "account",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAr": {
+            "body": "",
+            "initialized": false,
+            "method": "put",
+            "name": "Update Virtual Currency",
+            "params": {
+                "ACB": {
+                    "key": "name",
+                    "private": true,
+                    "value": ""
+                },
+                "ACC": {
+                    "allow_blank": false,
+                    "key": "baseRate",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "ACD": {
+                    "key": "basePa",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "data",
+            "rank": 3,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.AAr",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAr\":{\"caption\":\"Update Virtual Currency\",\"fields\":{\"_p_errorCode\":{\"ret_value\":\"text\",\"caption\":\"errorCode\",\"sample_value\":\"validation.failed\",\"path\":[\"errorCode\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Request validation failed. Please see data for additional information.\",\"path\":[\"message\"]},\"_p_statusCode\":{\"ret_value\":\"number\",\"caption\":\"statusCode\",\"sample_value\":400,\"path\":[\"statusCode\"]},\"_p_data\":{\"ret_value\":\"list.api.1623161739469x817972187112669200.plugin_api.AAr.data\",\"caption\":\"data\",\"path\":[\"data\"]}}},\"plugin_api.AAr.data\":{\"caption\":\"Update Virtual Currency data\",\"fields\":{}}}",
+            "url": "https://api-eu1.tatum.io/v3/ledger/virtualCurrency",
+            "wrap_error": false
+        },
+        "AAs": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get Ethereum ERC271 account balance",
+            "publish_as": "data",
+            "rank": 4,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.AAs",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAs\":{\"caption\":\"Get Ethereum ERC271 account balance\",\"fields\":{\"_p_balance\":{\"ret_value\":\"text\",\"caption\":\"balance\",\"sample_value\":\"10.52\",\"path\":[\"balance\"]}}}}",
+            "url": "https://api-eu1.tatum.io/v3/ethereum/erc721/balance/[address]/[contractAddress] \\",
+            "url_params": {
+                "AAw": {
+                    "key": "address",
+                    "private": true,
+                    "value": ""
+                },
+                "AAx": {
+                    "key": "contractAddress",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAu": {
+            "body": "{\n  \"to\": [\n    \"0x687422eEA2cB73B5d3e242bA5456b782919AFc85\"\n  ],\n  \"tokenId\": [\n    \"100000\"\n  ],\n  \"url\": [\n    \"https://my_token_data.com\"\n  ],\n  \"contractAddress\": \"0x687422eEA2cB73B5d3e242bA5456b782919AFc85\",\n  \"signatureId\": \"26d3883e-4e17-48b3-a0ee-09a3e484ac83\",\n  \"index\": 0,\n  \"nonce\": 0,\n  \"fee\": {\n    \"gasLimit\": \"40000\",\n    \"gasPrice\": \"20\"\n  }\n}",
+            "initialized": true,
+            "method": "post",
+            "name": "Mint Ethereum ERC721 Multiple tokens",
+            "params": {
+                "AAv": {
+                    "key": "to",
+                    "private": true,
+                    "value": ""
+                },
+                "ABv": {
+                    "key": "tokenId",
+                    "private": true,
+                    "value": ""
+                },
+                "ABw": {
+                    "key": "url",
+                    "private": true,
+                    "value": ""
+                },
+                "ABx": {
+                    "key": "contractAddress",
+                    "private": true,
+                    "value": ""
+                },
+                "ABy": {
+                    "key": "fromPrivateKey",
+                    "private": true,
+                    "value": ""
+                },
+                "ABz": {
+                    "key": "nonce",
+                    "private": true,
+                    "value": ""
+                },
+                "ACA": {
+                    "key": "fee",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "data",
+            "rank": 5,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.AAu",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAu\":{\"caption\":\"Mint Ethereum ERC721 Multiple token\",\"fields\":{\"_p_txId\":{\"ret_value\":\"text\",\"caption\":\"txId\",\"sample_value\":\"c83f8818db43d9ba4accfe454aa44fc33123d47a4f89d47b314d6748eb0e9bc9\",\"path\":[\"txId\"]},\"_p_failed\":{\"ret_value\":\"boolean\",\"caption\":\"failed\",\"sample_value\":false,\"path\":[\"failed\"]}}}}",
+            "url": "https://api-eu1.tatum.io/v3/ethereum/erc721/mint/batch"
+        },
+        "AAy": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get Ethereum Transaction",
+            "publish_as": "data",
+            "rank": 6,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.AAy",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAy\":{\"caption\":\"Get Ethereum Transaction\",\"fields\":{\"_p_blockHash\":{\"ret_value\":\"text\",\"caption\":\"blockHash\",\"sample_value\":\"0xcf2c40f475e78c7c19778e1ae999a0e371c9319b38182ea15dc94536f13f9137\",\"path\":[\"blockHash\"]},\"_p_status\":{\"ret_value\":\"boolean\",\"caption\":\"status\",\"sample_value\":true,\"path\":[\"status\"]},\"_p_blockNumber\":{\"ret_value\":\"number\",\"caption\":\"blockNumber\",\"sample_value\":6470854,\"path\":[\"blockNumber\"]},\"_p_from\":{\"ret_value\":\"text\",\"caption\":\"from\",\"sample_value\":\"0x81b7E08F65Bdf5648606c89998A9CC8164397647\",\"path\":[\"from\"]},\"_p_gas\":{\"ret_value\":\"number\",\"caption\":\"gas\",\"sample_value\":21000,\"path\":[\"gas\"]},\"_p_gasPrice\":{\"ret_value\":\"text\",\"caption\":\"gasPrice\",\"sample_value\":\"1000000000\",\"path\":[\"gasPrice\"]},\"_p_transactionHash\":{\"ret_value\":\"text\",\"caption\":\"transactionHash\",\"sample_value\":\"0xe6e7340394958674cdf8606936d292f565e4ecc476aaa8b258ec8a141f7c75d7\",\"path\":[\"transactionHash\"]},\"_p_input\":{\"ret_value\":\"text\",\"caption\":\"input\",\"sample_value\":\"0x\",\"path\":[\"input\"]},\"_p_nonce\":{\"ret_value\":\"number\",\"caption\":\"nonce\",\"sample_value\":26836405,\"path\":[\"nonce\"]},\"_p_to\":{\"ret_value\":\"text\",\"caption\":\"to\",\"sample_value\":\"0xbC546fa1716Ed886967cf73f40e8F2F5e623a92d\",\"path\":[\"to\"]},\"_p_transactionIndex\":{\"ret_value\":\"number\",\"caption\":\"transactionIndex\",\"sample_value\":3,\"path\":[\"transactionIndex\"]},\"_p_value\":{\"ret_value\":\"text\",\"caption\":\"value\",\"sample_value\":\"1000000000000000000\",\"path\":[\"value\"]},\"_p_gasUsed\":{\"ret_value\":\"number\",\"caption\":\"gasUsed\",\"sample_value\":21000,\"path\":[\"gasUsed\"]},\"_p_cumulativeGasUsed\":{\"ret_value\":\"number\",\"caption\":\"cumulativeGasUsed\",\"sample_value\":314159,\"path\":[\"cumulativeGasUsed\"]},\"_p_contractAddress\":{\"ret_value\":\"text\",\"caption\":\"contractAddress\",\"sample_value\":\"0x81b7E08F65Bdf5648606c89998A9CC8164397647\",\"path\":[\"contractAddress\"]},\"_p_logs\":{\"ret_value\":\"list.api.1623161739469x817972187112669200.plugin_api.AAy.logs\",\"caption\":\"logs\",\"path\":[\"logs\"]}}},\"plugin_api.AAy.logs\":{\"caption\":\"Get Ethereum Transaction log\",\"fields\":{\"_p_address\":{\"ret_value\":\"text\",\"caption\":\"address\",\"sample_value\":\"0x81b7E08F65Bdf5648606c89998A9CC8164397647\",\"path\":[\"address\"]},\"_p_topics\":{\"ret_value\":\"list.text\",\"caption\":\"topics\",\"sample_value\":\"0x033456732123ffff2342342dd12342434324234234fd234fd23fd4f23d4234\",\"path\":[\"topics\"]},\"_p_data\":{\"ret_value\":\"text\",\"caption\":\"data\",\"sample_value\":\"string\",\"path\":[\"data\"]},\"_p_logIndex\":{\"ret_value\":\"number\",\"caption\":\"logIndex\",\"sample_value\":0,\"path\":[\"logIndex\"]},\"_p_transactionIndex\":{\"ret_value\":\"number\",\"caption\":\"transactionIndex\",\"sample_value\":0,\"path\":[\"transactionIndex\"]},\"_p_transactionHash\":{\"ret_value\":\"text\",\"caption\":\"transactionHash\",\"sample_value\":\"0xe6e7340394958674cdf8606936d292f565e4ecc476aaa8b258ec8a141f7c75d7\",\"path\":[\"transactionHash\"]}}}}",
+            "url": "https://api-eu1.tatum.io/v3/ethereum/transaction/[hash]",
+            "url_params": {
+                "AAz": {
+                    "key": "hash",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            }
+        },
+        "ABA": {
+            "method": "get",
+            "name": "Burn Tokens",
+            "publish_as": "data",
+            "rank": 7,
+            "should_reinitialize": true
+        },
+        "ABB": {
+            "initialized": true,
+            "method": "post",
+            "name": "Estimate ethereum transaction fees",
+            "params": {
+                "ABC": {
+                    "doc": "sender address",
+                    "key": "from",
+                    "private": true,
+                    "value": ""
+                },
+                "ABD": {
+                    "doc": "recipient address",
+                    "key": "to",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "data",
+            "rank": 8,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.ABB",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABB\":{\"caption\":\"Estimate ethereum transaction fee\",\"fields\":{\"_p_gasLimit\":{\"ret_value\":\"text\",\"caption\":\"gasLimit\",\"sample_value\":\"\",\"path\":[\"gasLimit\"]},\"_p_gasPrice\":{\"ret_value\":\"text\",\"caption\":\"gasPrice\",\"sample_value\":\"\",\"path\":[\"gasPrice\"]}}}}",
+            "url": "https://api-eu1.tatum.io/v3/ethereum/gas"
+        },
+        "ABE": {
+            "method": "get",
+            "name": "Get Ethereum ERC721 Token Metadata",
+            "publish_as": "data",
+            "rank": 9,
+            "should_reinitialize": true,
+            "url": "https://api-eu1.tatum.io/v3/ethereum/erc721/metadata/[token]/[contractAddress]",
+            "url_params": {
+                "ABG": {
+                    "doc": "\t\nstring <= 32 characters\nExample: 1\nToken ID",
+                    "key": "token",
+                    "private": true,
+                    "value": "",
+                    "visibility": "hidden"
+                },
+                "ABH": {
+                    "key": "contractAddress",
+                    "private": true,
+                    "value": "",
+                    "visibility": "hidden"
+                }
+            }
+        },
+        "ABI": {
+            "initialized": true,
+            "method": "post",
+            "name": "Burn ERC20",
+            "params": {
+                "ABJ": {
+                    "key": "amount",
+                    "private": true,
+                    "value": ""
+                },
+                "ABK": {
+                    "key": "contractAddress",
+                    "private": true,
+                    "value": ""
+                },
+                "ABL": {
+                    "key": "fromPrivateKey",
+                    "private": true,
+                    "value": "string"
+                },
+                "ABM": {
+                    "key": "feeCurrency",
+                    "private": true,
+                    "value": "string"
+                },
+                "ABN": {
+                    "allow_blank": true,
+                    "key": "nonce",
+                    "optional": false,
+                    "private": true,
+                    "value": "number"
+                }
+            },
+            "publish_as": "data",
+            "rank": 10,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.ABI",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABI\":{\"caption\":\"Burn ERC20\",\"fields\":{\"_p_signatureId\":{\"ret_value\":\"text\",\"caption\":\"signatureId\",\"sample_value\":\"1f7f7c0c-3906-4aa1-9dfe-4b67c43918f6\",\"path\":[\"signatureId\"]}}}}",
+            "url": "https://api-eu1.tatum.io/v3/celo/erc20/burn"
+        },
+        "ABO": {
+            "method": "get",
+            "name": "Get Celo ERC20 Account balance",
+            "publish_as": "data",
+            "rank": 11,
+            "should_reinitialize": true,
+            "url": "https://api-eu1.tatum.io/v3/celo/account/balance/erc20/[address]/[contractAddress]",
+            "url_params": {
+                "ABP": {
+                    "key": "address",
+                    "private": true,
+                    "value": ""
+                },
+                "ABQ": {
+                    "key": "contractAddress",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "ABR": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get Celo ERC721 Account balance",
+            "publish_as": "data",
+            "rank": 12,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.ABR",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABR\":{\"caption\":\"Get Celo ERC721 Account balance\",\"fields\":{\"_p_data\":{\"ret_value\":\"text\",\"caption\":\"data\",\"sample_value\":\"\",\"path\":[\"data\"]}}}}",
+            "url": "https://api-eu1.tatum.io/v3/celo/erc721/balance/[address]/[contractAddress]",
+            "url_params": {
+                "ABS": {
+                    "key": "address",
+                    "private": true,
+                    "value": ""
+                },
+                "ABT": {
+                    "key": "contractAddress",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "ABU": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get Celo ERC721 Tokens By Address",
+            "publish_as": "data",
+            "rank": 13,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.ABU",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABU\":{\"caption\":\"Get Celo ERC721 Tokens By Addres\",\"fields\":{\"_p_data\":{\"ret_value\":\"list.text\",\"caption\":\"data\",\"sample_value\":\"1\",\"path\":[\"data\"]}}}}",
+            "url": "https://api-eu1.tatum.io/v3/celo/erc721/token/[address]/[contractAddress]",
+            "url_params": {
+                "ABV": {
+                    "key": "address",
+                    "private": true,
+                    "value": "string"
+                },
+                "ABW": {
+                    "key": "contractAddress",
+                    "private": true,
+                    "value": "string"
+                }
+            }
+        },
+        "ABX": {
+            "method": "get",
+            "name": "Get Celo ERC721 Tokens Id",
+            "publish_as": "data",
+            "rank": 14,
+            "should_reinitialize": true,
+            "url": "https://api-eu1.tatum.io/v3/celo/erc721/token/[address]/[index]/[contractAddress]",
+            "url_params": {
+                "ABs": {
+                    "key": "contractAddress",
+                    "private": true,
+                    "value": ""
+                },
+                "ABt": {
+                    "key": "index",
+                    "private": true,
+                    "value": ""
+                },
+                "ABu": {
+                    "key": "address",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "ABY": {
+            "method": "get",
+            "name": "Get Celo Account Balance",
+            "publish_as": "data",
+            "rank": 15,
+            "should_reinitialize": true,
+            "url": "https://api-eu1.tatum.io/v3/celo/account/balance/[address]",
+            "url_params": {
+                "ABr": {
+                    "key": "address",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "ABZ": {
+            "method": "get",
+            "name": "Get Celo ERC721 Tokens Metadata",
+            "publish_as": "data",
+            "rank": 16,
+            "should_reinitialize": true,
+            "url": "https://api-eu1.tatum.io/v3/celo/erc721/metadata/[token]/[contractAddress]",
+            "url_params": {
+                "ABp": {
+                    "doc": "https://tatum.io/apidoc#operation/CeloGetMetadataErc721",
+                    "key": "token",
+                    "private": true,
+                    "value": ""
+                },
+                "ABq": {
+                    "doc": "https://tatum.io/apidoc#operation/CeloGetMetadataErc721",
+                    "key": "contractAddress",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "ABa": {
+            "doc_link": "https://tatum.io/apidoc#operation/findAllCustomers",
+            "method": "get",
+            "name": "List All Customers ",
+            "publish_as": "action",
+            "rank": 17,
+            "should_reinitialize": true,
+            "url": "https://api-eu1.tatum.io/v3/ledger/customer"
+        },
+        "ABb": {
+            "initialized": false,
+            "method": "get",
+            "name": "Get Customer Details",
+            "publish_as": "data",
+            "rank": 18,
+            "should_reinitialize": true,
+            "url": "https://api-eu1.tatum.io/v3/ledger/customer/[id]",
+            "url_params": {
+                "ABk": {
+                    "key": "id",
+                    "private": true,
+                    "value": "0"
+                }
+            }
+        },
+        "ABc": {
+            "method": "get",
+            "name": "Get currenct exchange rate of the supported FIAT / crypto asset",
+            "publish_as": "data",
+            "rank": 19,
+            "should_reinitialize": true,
+            "url": "https://api-eu1.tatum.io/v3/tatum/rate/[currency]",
+            "url_params": {
+                "ABj": {
+                    "key": "currency",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "ABd": {
+            "method": "get",
+            "name": "Get Ethereum Account Details",
+            "publish_as": "data",
+            "rank": 20,
+            "should_reinitialize": true
+        },
+        "ABe": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get NFT Token Metadata",
+            "publish_as": "data",
+            "rank": 21,
+            "ret_value": "api.1623161739469x817972187112669200.plugin_api.ABe",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABe\":{\"caption\":\"Get NFT Token Metadata\",\"fields\":{\"_p_data\":{\"ret_value\":\"text\",\"caption\":\"data\",\"sample_value\":\"\",\"path\":[\"data\"]}}}}",
+            "url": "https://api-eu1.tatum.io/v3/nft/metadata/[chain]/[contractAddress]/[token]",
+            "url_params": {
+                "ABg": {
+                    "key": "token",
+                    "private": true,
+                    "value": ""
+                },
+                "ABh": {
+                    "key": "contractAddress",
+                    "private": true,
+                    "value": ""
+                },
+                "ABi": {
+                    "key": "chain",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "ABf": {
+            "method": "get",
+            "name": "NFT IPFS Meta Data",
+            "publish_as": "data",
+            "rank": 22,
+            "should_reinitialize": true
+        },
+        "token_call": {
+            "headers": {
+                "AAg": {
+                    "key": "",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "method": "post",
+            "url": ""
+        }
+    },
+    "human": "Tatum ",
+    "shared_headers": {
+        "AAf": {
+            "key": "x-api-key",
+            "private": true,
+            "visibility": "secret"
+        }
+    },
+    "token_param_name": ""
+}

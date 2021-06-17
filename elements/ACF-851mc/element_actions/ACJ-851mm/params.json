@@ -1,0 +1,11 @@
+{
+    "caption": "redirect_to_homepage",
+    "fields": {
+        "ACK": {
+            "caption": "Redirect to",
+            "editor": "DynamicValue",
+            "name": "redirect_to",
+            "rank": 0
+        }
+    }
+}

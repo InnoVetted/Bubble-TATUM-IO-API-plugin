@@ -1,0 +1,27 @@
+{
+    "category": "data (things)",
+    "display": "ERC721 Token Meta data",
+    "fields": {
+        "ADG": {
+            "caption": "token",
+            "editor": "StaticText",
+            "name": "token",
+            "rank": 0
+        },
+        "ADH": {
+            "caption": "contractAddress",
+            "editor": "StaticText",
+            "name": "contractaddress",
+            "rank": 1
+        }
+    },
+    "return_value": {
+        "ADI": {
+            "caption": "data",
+            "name": "data",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

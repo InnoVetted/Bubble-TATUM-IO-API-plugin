@@ -1,0 +1,81 @@
+{
+    "category": "data (things)",
+    "display": "Get virtual Currency",
+    "fields": {
+        "ACV": {
+            "caption": "name",
+            "editor": "DynamicValue",
+            "name": "name",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "ACW": {
+            "caption": "name",
+            "name": "name",
+            "rank": 0,
+            "value": "text"
+        },
+        "ACX": {
+            "caption": "supply",
+            "name": "supply",
+            "rank": 1,
+            "value": "text"
+        },
+        "ACY": {
+            "caption": "accountId",
+            "name": "accountid",
+            "rank": 2,
+            "value": "text"
+        },
+        "ACZ": {
+            "caption": "baseRate",
+            "name": "baserate",
+            "rank": 3,
+            "value": "number"
+        },
+        "ACa": {
+            "caption": "basePair",
+            "name": "basepair",
+            "rank": 4,
+            "value": "text"
+        },
+        "ACb": {
+            "caption": "customerId",
+            "name": "customerid",
+            "rank": 5,
+            "value": "text"
+        },
+        "ACc": {
+            "caption": "description",
+            "name": "description",
+            "rank": 6,
+            "value": "text"
+        },
+        "ACd": {
+            "caption": "erc20Address",
+            "name": "erc20address",
+            "rank": 7,
+            "value": "text"
+        },
+        "ACe": {
+            "caption": "issuerAccount",
+            "name": "issueraccount",
+            "rank": 8,
+            "value": "text"
+        },
+        "ACf": {
+            "caption": "chain",
+            "name": "chain",
+            "rank": 9,
+            "value": "text"
+        },
+        "ACg": {
+            "caption": "initialAddress",
+            "name": "initialaddress",
+            "rank": 10,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

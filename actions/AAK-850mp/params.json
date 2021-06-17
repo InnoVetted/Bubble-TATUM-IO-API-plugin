@@ -1,0 +1,13 @@
+{
+    "category": "plugins",
+    "display": "Ethereum Transaction Details",
+    "fields": {
+        "ACw": {
+            "caption": "hash",
+            "editor": "StaticText",
+            "name": "hash",
+            "rank": 0
+        }
+    },
+    "type": "server_side"
+}
